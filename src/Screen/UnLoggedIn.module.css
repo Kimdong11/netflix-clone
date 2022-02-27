@@ -203,8 +203,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 20%;
-    left: 12%;
+    bottom: 12vh;
+    left: 8.5vh;
     width: 400px;
     height: 100px;
     padding: 0 10px;

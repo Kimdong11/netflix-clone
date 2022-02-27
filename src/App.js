@@ -5,7 +5,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<UnloggedIn />}></Route>
+                <Route path='/netflix-clone' element={<UnloggedIn />}></Route>
                 <Route path='/main' element={<h1>Neflix main</h1>}></Route>
             </Routes>
         </Router>
