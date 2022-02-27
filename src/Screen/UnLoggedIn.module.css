@@ -1,0 +1,269 @@
+.img__container {
+    z-index: -99;
+}
+
+.img__container img {
+    width: 100vw;
+    height: 650px;
+    opacity: 40%;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+}
+
+.top__container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+.top_left__container {
+    padding-left: 55px;
+    width: 100%;
+}
+
+.top_right__container {
+    display: flex;
+    gap: 30px;
+    padding-right: 55px;
+}
+
+.select__lang {
+    width: 75px;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.netflix__text {
+    width: 8.3rem;
+    height: 4.3rem;
+    color: #e50914;
+    fill: #e50914 !important;
+    line-height: normal;
+    opacity: 100%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.login__button {
+    width: 75px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #e50914;
+}
+
+.desc__container_kor {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 650px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+}
+
+.desc__container_eng {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 650px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.desc__text__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc__text_1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.desc__text_2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.desc__text_3 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.desc__input_container {
+    display: flex;
+    margin-top: 25px;
+}
+.desc__input {
+    width: 450px;
+    height: 60px;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fff;
+}
+
+.desc__button {
+    width: 170px;
+    height: 60px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #e50914;
+}
+
+.second__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 465px;
+    padding: 0 150px;
+}
+
+.second__container__text {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.second__container__span_1 {
+    font-size: 50px;
+    padding-top: -50px;
+}
+
+.second__container__span_2 {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.second__container__span_3 {
+    font-size: 28px;
+}
+
+.second__container__span_4 {
+    font-size: 28px;
+}
+
+.second__container__img {
+    height: 400px;
+}
+
+.second__vedio__container {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 400px;
+    height: 500px;
+    z-index: -99;
+}
+
+.third__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
+    padding: 0 100px;
+}
+
+.third__container_item {
+    position: relative;
+}
+
+.third__container__img {
+    height: 400px;
+}
+
+.third__container_animation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 20%;
+    left: 12%;
+    width: 400px;
+    height: 100px;
+    padding: 0 10px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.third__container_left {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third__container_animation__img {
+    width: 50px;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.third__container_animation__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.third__container_animation__text_1 {
+    color: #fff;
+}
+
+.third__container_animation__text_2 {
+    font-size: 14px;
+    color: #0071eb;
+}
+
+.third__container_animation__div {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') no-repeat center;
+    background-size: contain;
+}
+
+.third__container_animation__right_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120%;
+    color: #fff;
+    padding-left: 120px;
+}
+
+.third__container_animation__right_text span:first-child,
+.third__container_animation__right_text span:nth-child(2) {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.third__container_animation__right_text span:last-child {
+    margin-top: 25px;
+    font-size: 26px;
+}
