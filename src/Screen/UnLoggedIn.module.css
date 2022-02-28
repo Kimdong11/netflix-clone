@@ -265,6 +265,11 @@
 }
 
 .third__container_animation__right_text span:last-child {
+    font-size: 26px;
+}
+
+.third__container_animation__right_text__eng,
+.third__container_animation__right_text__kor {
     margin-top: 25px;
     font-size: 26px;
 }
