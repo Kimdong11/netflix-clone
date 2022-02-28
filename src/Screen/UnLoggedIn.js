@@ -47,7 +47,8 @@ const UnloggedIn = () => {
                         ) : (
                             <div className={styles.desc__container_eng}>
                                 <div className={styles.desc__text__container}>
-                                    <span className={styles.desc__text_1}>Unlimited movies, TV shows, and more.</span>
+                                    <span className={styles.desc__text_1}>Unlimited movies,</span>
+                                    <span className={styles.desc__text_1}>TV shows, and more.</span>
                                     <span className={styles.desc__text_2}>Watch anywhere. Cancel anytime.</span>
                                     <span className={styles.desc__text_3}>
                                         Ready to watch? Enter your email to create or restart your membership.
