@@ -63,6 +63,16 @@
     background-color: #e50914;
 }
 
+.login__button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login__button a :active {
+    color: #fff;
+    text-decoration: none;
+}
+
 .desc__container_kor {
     display: flex;
     position: absolute;
@@ -272,4 +282,29 @@
 .third__container_animation__right_text__kor {
     margin-top: 25px;
     font-size: 26px;
+}
+
+.fourth__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth__container_columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth__container h1 {
+    padding-left: 4vw;
+    color: white;
+    font-size: 50px;
+}
+
+.li__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }

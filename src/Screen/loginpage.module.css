@@ -1,0 +1,9 @@
+.netflix__text {
+    width: 10rem;
+    height: 7rem;
+    color: #e50914;
+    fill: #e50914 !important;
+    line-height: normal;
+    opacity: 100%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
