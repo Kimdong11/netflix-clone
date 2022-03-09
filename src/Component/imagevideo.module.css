@@ -1,0 +1,37 @@
+.second__container__text {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.second__container__span_1 {
+    font-size: 50px;
+    padding-top: -50px;
+}
+
+.second__container__span_2 {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.second__container__span_3 {
+    font-size: 28px;
+}
+
+.second__container__span_4 {
+    font-size: 28px;
+}
+
+.second__container__img {
+    height: 400px;
+}
+
+.second__vedio__container {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 400px;
+    height: 500px;
+    z-index: -99;
+}

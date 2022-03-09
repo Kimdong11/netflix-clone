@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import styles from './UnLoggedIn.module.css';
 import Line from '../Component/Line';
 import Blinder from '../Component/Blinder';
+import WriteImage from '../Component/WriteImage';
+import ImageVideo from '../Component/ImageVideo';
+import ImageContents from '../Component/ImageContents';
 
 const UnloggedIn = () => {
     const [language, setLanguage] = useState('Kor');
@@ -37,38 +40,7 @@ const UnloggedIn = () => {
                                 <a href='/login'>로그인</a>
                             </button>
                         </div>
-                        {language == 'Kor' ? (
-                            <div className={styles.desc__container_kor}>
-                                <div className={styles.desc__text__container}>
-                                    <span className={styles.desc__text_1}>영화와 시리즈를 무제한으로.</span>
-                                    <span className={styles.desc__text_2}>
-                                        다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.
-                                    </span>
-                                    <span className={styles.desc__text_3}>
-                                        시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
-                                    </span>
-                                    <div className={styles.desc__input_container}>
-                                        <input className={styles.desc__input} type='text' />
-                                        <button className={styles.desc__button}>시작하기 ></button>
-                                    </div>
-                                </div>
-                            </div>
-                        ) : (
-                            <div className={styles.desc__container_eng}>
-                                <div className={styles.desc__text__container}>
-                                    <span className={styles.desc__text_1}>Unlimited movies,</span>
-                                    <span className={styles.desc__text_1}>TV shows, and more.</span>
-                                    <span className={styles.desc__text_2}>Watch anywhere. Cancel anytime.</span>
-                                    <span className={styles.desc__text_3}>
-                                        Ready to watch? Enter your email to create or restart your membership.
-                                    </span>
-                                    <div className={styles.desc__input_container}>
-                                        <input className={styles.desc__input} type='text' />
-                                        <button className={styles.desc__button}>Get Start ></button>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
+                        <WriteImage language={language} />
                     </div>
                 </div>
                 <div className={styles.img__container}>
@@ -80,98 +52,20 @@ const UnloggedIn = () => {
                     <Line />
                 </div>
                 <div className={styles.second__container}>
-                    {language == 'Kor' ? (
-                        <div className={styles.second__container__text}>
-                            <span className={styles.second__container__span_1}>TV로 즐기세요.</span>
-                            <span className={styles.second__container__span_2}>스마트 TV, PlayStation, Xbox, Chromecast, </span>
-                            <span className={styles.second__container__span_3}>Apple TV, 블루레이 플레이어 등 다양한 </span>
-                            <span className={styles.second__container__span_4}>디바이스에서 시청하세요.</span>
-                        </div>
-                    ) : (
-                        <div className={styles.second__container__text}>
-                            <span className={styles.second__container__span_1}>Enjoy on your TV.</span>
-                            <span className={styles.second__container__span_2}>
-                                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and
-                            </span>
-                            <span className={styles.second__container__span_3}>more.</span>
-                        </div>
-                    )}
-                    <div>
-                        <img
-                            className={styles.second__container__img}
-                            src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png'
-                        />
-                        <div className={styles.second__vedio__container}>
-                            <video width='400px' autoplay='autoplay' playsinline='playsinline' muted='muted' loop='loop'>
-                                <source
-                                    src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v'
-                                    type='video/mp4'
-                                />
-                            </video>
-                        </div>
-                    </div>
+                    <ImageVideo language={language} />
                 </div>
                 <Line />
-                {language == 'Kor' ? (
-                    <div className={styles.third__container}>
-                        <div className={styles.third__container_item}>
-                            <img
-                                className={styles.third__container__img}
-                                src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'
-                            />
-                            <div className={styles.third__container_animation}>
-                                <div className={styles.third__container_left}>
-                                    <img
-                                        className={styles.third__container_animation__img}
-                                        src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png'
-                                    />
-                                    <div className={styles.third__container_animation__text}>
-                                        <span className={styles.third__container_animation__text_1}>기묘한 이야기</span>
-                                        <span className={styles.third__container_animation__text_2}>저장중...</span>
-                                    </div>
-                                </div>
-                                <div className={styles.third__container_animation__div}></div>
-                            </div>
-                        </div>
-                        <div className={styles.third__container_animation__right_text}>
-                            <span>즐겨 보는 콘텐츠를 저장해</span>
-                            <span>오프라인으로 시청하세요.</span>
-                            <span className={styles.third__container_animation__right_text__kor}>
-                                간편하게 저장하고 빈틈없이 즐겨보세요.
-                            </span>
-                        </div>
-                    </div>
-                ) : (
-                    <div className={styles.third__container}>
-                        <div className={styles.third__container_item}>
-                            <img
-                                className={styles.third__container__img}
-                                src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'
-                            />
-                            <div className={styles.third__container_animation}>
-                                <div className={styles.third__container_left}>
-                                    <img
-                                        className={styles.third__container_animation__img}
-                                        src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png'
-                                    />
-                                    <div className={styles.third__container_animation__text}>
-                                        <span className={styles.third__container_animation__text_1}>Stranger Things</span>
-                                        <span className={styles.third__container_animation__text_2}>Downloading...</span>
-                                    </div>
-                                </div>
-                                <div className={styles.third__container_animation__div}></div>
-                            </div>
-                        </div>
-                        <div className={styles.third__container_animation__right_text}>
-                            <span>Download your shows</span>
-                            <span>to watch offline.</span>
-                            <span className={styles.third__container_animation__right_text__eng}>
-                                Save your favorites easily and always have
-                            </span>
-                            <span className={styles.third__container_animation__right_text__eng_1}>something to watch.</span>
-                        </div>
-                    </div>
-                )}
+                <div className={styles.third__container}>
+                    <ImageContents language={language} />
+                </div>
+                <Line />
+                <div className={styles.second__container}>
+                    <ImageVideo language={language} />
+                </div>
+                <Line />
+                <div className={styles.third__container}>
+                    <ImageContents language={language} />
+                </div>
                 <Line />
                 <div className={styles.fourth__container}>
                     {language == 'Kor' ? (

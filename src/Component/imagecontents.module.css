@@ -1,0 +1,83 @@
+.third__container_item {
+    position: relative;
+}
+
+.third__container__img {
+    height: 400px;
+}
+
+.third__container_animation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 12vh;
+    left: 8.5vh;
+    width: 400px;
+    height: 100px;
+    padding: 0 10px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.third__container_left {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.third__container_animation__img {
+    width: 50px;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.third__container_animation__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.third__container_animation__text_1 {
+    color: #fff;
+}
+
+.third__container_animation__text_2 {
+    font-size: 14px;
+    color: #0071eb;
+}
+
+.third__container_animation__div {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') no-repeat center;
+    background-size: contain;
+}
+
+.third__container_animation__right_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120%;
+    color: #fff;
+    padding-left: 120px;
+}
+
+.third__container_animation__right_text span:first-child,
+.third__container_animation__right_text span:nth-child(2) {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.third__container_animation__right_text span:last-child {
+    font-size: 26px;
+}
+
+.third__container_animation__right_text__eng,
+.third__container_animation__right_text__kor {
+    margin-top: 25px;
+    font-size: 26px;
+}
