@@ -5,6 +5,7 @@ import Blinder from '../Component/Blinder';
 import WriteImage from '../Component/WriteImage';
 import ImageVideo from '../Component/ImageVideo';
 import ImageContents from '../Component/ImageContents';
+import ImageContents2 from '../Component/ImageContents2';
 
 const UnloggedIn = () => {
     const [language, setLanguage] = useState('Kor');
@@ -52,19 +53,68 @@ const UnloggedIn = () => {
                     <Line />
                 </div>
                 <div className={styles.second__container}>
-                    <ImageVideo language={language} />
+                    <ImageVideo
+                        language={language}
+                        imageSrc='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png'
+                        videoSrc='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v'
+                        korSpan1='TV로 즐기세요.'
+                        korSpan2='스마트 TV, PlayStation, Xbox, Chromecast,'
+                        korSpan3='Apple TV, 블루레이 플레이어 등 다양한'
+                        korSpan4='디바이스에서 시청하세요.'
+                        engSpan1='Enjoy on your TV.'
+                        engSpan2='Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and'
+                        engSpan3='more.'
+                    />
                 </div>
                 <Line />
                 <div className={styles.third__container}>
-                    <ImageContents language={language} />
+                    <ImageContents
+                        language={language}
+                        imageSrc1='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'
+                        imageSrc2='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png'
+                        korSpan1='즐겨 보는 콘텐츠를 저장해'
+                        korSpan2='오프라인으로 시청하세요.'
+                        korSpan3='간편하게 저장하고 빈틈없이 즐겨보세요.'
+                        aniText1='Stranger Things'
+                        aniText2='Downloading...'
+                        engSpan1='Download your shows'
+                        engSpan2='to watch offline.'
+                        engSpan3='Save your favorites easily and always have'
+                        engSpan4='something to watch.'
+                    />
                 </div>
                 <Line />
                 <div className={styles.second__container}>
-                    <ImageVideo language={language} />
+                    <ImageVideo
+                        language={language}
+                        imageSrc='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png'
+                        videoSrc='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v'
+                        korSpan1='다양한 디바이스에서'
+                        korSpan11='시청하세요.'
+                        korSpan2='각종 영화와 시리즈를 스마트폰, 태블릿, 노트북,'
+                        korSpan3='TV에서 무제한으로 스트리밍하세요. 추가 요금이'
+                        korSpan4='전혀 없습니다.'
+                        engSpan1='Watch everywhere.'
+                        engSpan2='Stream unlimited movies and TV shows on'
+                        engSpan3='your phone, tablet, laptop, and TV without.'
+                        engSpan4='paying more.'
+                    />
                 </div>
                 <Line />
                 <div className={styles.third__container}>
-                    <ImageContents language={language} />
+                    <ImageContents2
+                        language={language}
+                        imageSrc='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png'
+                        engSpan1='Create profiles for kids.'
+                        engSpan2='Send kids on adventures with their favorite'
+                        engSpan3='characters in a space made just for them—'
+                        engSpan4='free with your membership.'
+                        korSpan1='어린이 전용 프로필을'
+                        korSpan11='만들어 보세요.'
+                        korSpan2='자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는'
+                        korSpan3='모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스'
+                        korSpan4='회원이라면 무료입니다.'
+                    />
                 </div>
                 <Line />
                 <div className={styles.fourth__container}>
