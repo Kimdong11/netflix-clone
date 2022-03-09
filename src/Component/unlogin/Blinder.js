@@ -1,4 +1,3 @@
-import { act } from 'react-dom/test-utils';
 import styles from './Blinder.module.css';
 
 const Blinder = ({ div, span, active }) => {

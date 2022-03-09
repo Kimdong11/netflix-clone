@@ -1,9 +1,17 @@
-.netflix__text {
-    width: 10rem;
-    height: 7rem;
-    color: #e50914;
-    fill: #e50914 !important;
-    line-height: normal;
-    opacity: 100%;
-    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background__img {
+    position: absolute;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/25155d75-2aae-4c0a-aee9-25c07646d644/KR-ko-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    width: 100vw;
+    height: 100vh;
+    opacity: 40%;
+    z-index: -1;
 }

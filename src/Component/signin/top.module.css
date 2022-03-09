@@ -1,0 +1,13 @@
+.netflix__text {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    width: 10.5rem;
+    height: 8rem;
+    padding-bottom: 4.5vh;
+    color: #e50914;
+    fill: #e50914 !important;
+    line-height: normal;
+    opacity: 100%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

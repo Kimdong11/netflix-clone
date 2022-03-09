@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from './UnLoggedIn.module.css';
-import Line from '../Component/Line';
-import Blinder from '../Component/Blinder';
-import WriteImage from '../Component/WriteImage';
-import ImageVideo from '../Component/ImageVideo';
-import ImageContents from '../Component/ImageContents';
-import ImageContents2 from '../Component/ImageContents2';
+import Line from '../Component/unlogin/Line';
+import Blinder from '../Component/unlogin/Blinder';
+import WriteImage from '../Component/unlogin/WriteImage';
+import ImageVideo from '../Component/unlogin/ImageVideo';
+import ImageContents from '../Component/unlogin/ImageContents';
+import ImageContents2 from '../Component/unlogin/ImageContents2';
 
 const UnloggedIn = () => {
     const [language, setLanguage] = useState('Kor');
