@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-height: 500px;
+    padding: 30px 0 30px 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.phone__link_container {
+    display: flex;
+}
+
+.phone__link_container span {
+    color: #737373;
+}
+
+.phone__link_container a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.phone__link_container a:hover {
+    text-decoration: underline;
+}
+
+.link__container {
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #737373;
+    font-size: 12px;
+}

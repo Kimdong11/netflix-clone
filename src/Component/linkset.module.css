@@ -1,0 +1,24 @@
+.li_container {
+    display: flex;
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.li_container li {
+    color: #737373;
+    margin-right: 120px;
+}
+
+.li_container li a {
+    display: block;
+    width: 120px;
+    color: #737373;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.li_container li a:hover {
+    text-decoration: underline;
+}

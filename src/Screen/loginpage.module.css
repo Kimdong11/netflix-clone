@@ -11,7 +11,7 @@
     position: absolute;
     background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/25155d75-2aae-4c0a-aee9-25c07646d644/KR-ko-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg');
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     opacity: 40%;
     z-index: -1;
 }

@@ -1,13 +1,13 @@
 .login__form_container {
     position: relative;
     margin-top: 6vh;
-    width: 31vw;
-    height: 84vh;
+    width: 450px;
+    height: 650px;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .login__form_container h1 {
-    padding: 5vh 0 0 5vw;
+    padding: 40px 0 0 70px;
     color: white;
 }
 
@@ -21,9 +21,13 @@
 .input_container,
 .login__button {
     position: relative;
-    width: 21.3vw;
-    height: 7vh;
+    width: 313px;
+    height: 50px;
     margin-bottom: 2vh;
+}
+
+.login__button {
+    cursor: pointer;
 }
 
 .input {
@@ -34,32 +38,38 @@
     border: none;
     background-color: #303030;
     outline: none;
-    padding-top: 20px;
     padding-left: 1.5vw;
-    font-size: 14px;
+    font-size: 16px;
+    padding-left: 21px;
+    padding-top: 20px;
 }
 
 .label {
     position: absolute;
-    color: white;
+    color: #8c8c8c;
     top: 35%;
     left: 7%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .input:focus ~ .label {
-    font-size: 8px;
+    font-size: 11px;
     top: 18%;
+    color: #8c8c8c;
     transition: all 0.1s linear;
+}
+
+.input:focus {
+    background-color: rgb(71, 71, 71);
 }
 
 .focus__input {
     position: absolute;
-    color: white;
+    color: #8c8c8c;
     width: 100%;
-    font-size: 8px;
+    font-size: 11px;
     left: 7%;
-    top: 18%;
+    top: 20%;
 }
 
 .id__line {
@@ -68,7 +78,7 @@
     background-color: #e87c03;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 21.3vw;
+    width: 313px;
     height: 3px;
 }
 
@@ -78,20 +88,20 @@
     background-color: #e87c03;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 21.3vw;
+    width: 313px;
     height: 3px;
 }
 
 .span__container {
     margin-top: -1.7vh;
     margin-bottom: 2vh;
-    margin-right: 4.2vw;
+    margin-right: 80px;
 }
 
 .pwd_span__container {
     margin-top: -1.7vh;
     margin-bottom: 2vh;
-    margin-right: 6.7vw;
+    margin-right: 115px;
 }
 
 .email__span {
@@ -100,6 +110,7 @@
 }
 
 .login__button {
+    margin-top: 30px;
     background-color: #e50914;
     color: #fff;
     border: none;
@@ -111,8 +122,119 @@
 .login__option_container {
     display: flex;
     justify-content: space-between;
-    padding: 0 5vw 0 5vw;
+    align-items: center;
+    padding: 0 70px 0 66px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.login__option_container input {
+    width: 17px;
+    height: 17px;
+    background: #737373;
+}
+
+.login__option_container input::after {
+    color: black;
+}
+
+.login__option_container label {
+    margin-left: -60px;
+}
+
+.login__option_container a {
+    color: #8c8c8c;
+    text-decoration: none;
+    padding-top: 1px;
+}
+
+.login__option_container a:hover {
+    color: #8c8c8c;
+    text-decoration: underline;
+}
+
+.oauth__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    padding-right: 172px;
+}
+
+.oauth__container div {
+    width: 15px;
+    height: 15px;
+}
+
+.oauth__container div img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.oauth__container a {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.oauth__container a:hover,
+.signup__container a:hover {
+    text-decoration: underline;
+}
+
+.signup__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.signup__container span {
+    margin-left: -60px;
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+.signup__container a {
+    margin-left: 5px;
+    padding-bottom: 1px;
+    font-size: 16px;
     color: #fff;
+    text-decoration: none;
+}
+
+.captcha__text {
+    display: inline-block;
+    margin-left: 70px;
+    color: #8c8c8c;
+    font-size: 13px;
+}
+
+.captcha__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.captcha__container span {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-left: -89px;
+}
+
+.captcha__container a {
+    margin-left: 5px;
+    color: #0071eb;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.captcha__container a:hover {
+    text-decoration: underline;
 }
 
 .hidden {

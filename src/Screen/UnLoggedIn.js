@@ -6,6 +6,7 @@ import WriteImage from '../Component/unlogin/WriteImage';
 import ImageVideo from '../Component/unlogin/ImageVideo';
 import ImageContents from '../Component/unlogin/ImageContents';
 import ImageContents2 from '../Component/unlogin/ImageContents2';
+import FooterU from '../Component/unlogin/FooterU';
 
 const UnloggedIn = () => {
     const [language, setLanguage] = useState('Kor');
@@ -616,6 +617,7 @@ const UnloggedIn = () => {
                     )}
                 </div>
                 <Line />
+                <FooterU />
             </div>
         </div>
     );

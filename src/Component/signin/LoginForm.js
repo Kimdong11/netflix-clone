@@ -42,7 +42,7 @@ const LoginForm = () => {
             <h1>로그인</h1>
             <form className={styles.login__form}>
                 <div className={styles.input_container}>
-                    <input onChange={idValueChange} className={styles.input} type='email' id='user__id' />
+                    <input onChange={idValueChange} className={styles.input} type='email' id='user__id' autoComplete='email' />
                     {idValueCheck ? (
                         <label className={styles.focus__input} for='user__id'>
                             이메일 주소 또는 전화번호
@@ -98,11 +98,24 @@ const LoginForm = () => {
                 </button>
             </form>
             <div className={styles.login__option_container}>
-                <label>
-                    <input type='checkbox' />
-                    <span>로그인 정보 저장</span>
-                </label>
-                <a>도움이 필요하신가요?</a>
+                <input type='checkbox' id='check-box' className={styles.checkbox} />
+                <label for='check-box'>로그인 정보 저장</label>
+                <a href=''>도움이 필요하신가요?</a>
+            </div>
+            <div className={styles.oauth__container}>
+                <div>
+                    <img src='https://www.shinailbo.co.kr/news/photo/202108/1445186_644793_2318.jpg' />
+                </div>
+                <a href=''>카카오로 로그인하기</a>
+            </div>
+            <div className={styles.signup__container}>
+                <span>Netflix 회원이 아닌가요?</span>
+                <a href=''>지금 가입하세요</a>
+            </div>
+            <span className={styles.captcha__text}>이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가</span>
+            <div className={styles.captcha__container}>
+                <span>로봇이 아님을 확인합니다.</span>
+                <a href=''>지세히 알아보기</a>
             </div>
         </div>
     );
