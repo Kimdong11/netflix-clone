@@ -616,6 +616,15 @@ const UnloggedIn = () => {
                         </div>
                     )}
                 </div>
+                <div className={styles.desc__text_container}>
+                    <span className={styles.desc__text_3}>
+                        시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
+                    </span>
+                </div>
+                <div className={styles.desc__input_container}>
+                    <input className={styles.desc__input} type='text' />
+                    <button className={styles.desc__button}>시작하기 ></button>
+                </div>
                 <Line />
                 <FooterU />
             </div>
