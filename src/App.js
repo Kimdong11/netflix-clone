@@ -8,8 +8,8 @@ function App() {
         <Router>
             <Routes>
                 <Route path='/netflix-clone' element={<UnloggedIn />}></Route>
-                <Route path='/login' element={<LoginPage />}></Route>
-                <Route path='/main' element={<MainPage />}></Route>
+                <Route path='/netflix-clone/login' element={<LoginPage />}></Route>
+                <Route path='/netflix-clone/main' element={<MainPage />}></Route>
             </Routes>
         </Router>
     );

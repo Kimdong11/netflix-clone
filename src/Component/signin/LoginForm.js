@@ -2,12 +2,13 @@ import { useState } from 'react';
 import styles from './loginform.module.css';
 
 const LoginForm = () => {
-    const [idValueCheck, setIdValueCheck] = useState(false);
-    const [passwordValueCheck, setPasswordValueCheckValueCheck] = useState(false);
-    const [clickChkId, setClickChkId] = useState(false);
-    const [clickChkPwd, setClickChkPwd] = useState(false);
+    const [idValueCheck, setIdValueCheck] = useState(false); //id가 타이핑 됐는지 확인 여부
+    const [passwordValueCheck, setPasswordValueCheckValueCheck] = useState(false); //비밀번호 타이핑 확인
+    const [clickChkId, setClickChkId] = useState(false); // id Input이 클릭 됐는지 확인
+    const [clickChkPwd, setClickChkPwd] = useState(false); // password Input이 클릭 됐는지 확인
 
     const idValueChange = (e) => {
+        // id input에 타이핑을 하면 idValueCheck  값 True로 변경
         if (e.target.value != 0) {
             setIdValueCheck(true);
         } else {
@@ -16,6 +17,7 @@ const LoginForm = () => {
     };
 
     const passwordValueChange = (e) => {
+        // password input에 타이핑을 하면 passwordValueCheck  값 True로 변경
         if (e.target.value != 0) {
             setPasswordValueCheckValueCheck(true);
         } else {
@@ -24,6 +26,7 @@ const LoginForm = () => {
     };
 
     const buttonClick = (e) => {
+        // 로그인 버튼을 눌렀을 떼 idValueCheck과 passwordValueChk의 값에 따라 clickChk 값 세팅
         e.preventDefault();
         if (!idValueCheck) {
             setClickChkId(true);

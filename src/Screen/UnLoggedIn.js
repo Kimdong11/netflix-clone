@@ -39,7 +39,7 @@ const UnloggedIn = () => {
                                 <option value='Eng'>English</option>
                             </select>
                             <button className={styles.login__button}>
-                                <a href='/login'>로그인</a>
+                                <a href='/netflix-clone/login'>로그인</a>
                             </button>
                         </div>
                         <WriteImage language={language} />
