@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import styles from './topbar.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell, faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const TopBar = () => {
     const [currentUrl, setCurrentUrl] = useState('');
     const [scrollChk, setScrollchk] = useState(false);
+    const [mouseEnter, setMouseEnter] = useState(false);
     const url = window.location.href.split('/')[window.location.href.split('/').length - 1];
 
     const scrollCheck = () => {
@@ -12,6 +15,14 @@ const TopBar = () => {
         } else {
             setScrollchk(false);
         }
+    };
+
+    const onMouseEnter = () => {
+        setMouseEnter(true);
+    };
+
+    const onMouseLeave = () => {
+        setMouseEnter(false);
     };
 
     useEffect(() => {
@@ -64,18 +75,31 @@ const TopBar = () => {
             </div>
             <div className={styles.right__container}>
                 <nav className={styles.right__nav}>
-                    <ul>
+                    <ul className={styles.right__nav_ul}>
                         <li>
-                            <a>검색</a>
-                        </li>
-                        <li>
-                            <a>알림</a>
+                            <a>
+                                <FontAwesomeIcon icon={faSearch} />
+                            </a>
                         </li>
                         <li>
                             <a>키즈</a>
                         </li>
                         <li>
-                            <a>프로필</a>
+                            <a>
+                                <FontAwesomeIcon icon={faBell} />
+                            </a>
+                        </li>
+                        <li>
+                            <div className={styles.profile__container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                                <span>
+                                    <img src='https://occ-0-4796-988.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41'></img>
+                                </span>
+                                <span
+                                    role='presentation'
+                                    className={mouseEnter ? styles.profile__container_span__rotate : styles.profile__container_span}>
+                                    <FontAwesomeIcon icon={faCaretDown} />
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </nav>

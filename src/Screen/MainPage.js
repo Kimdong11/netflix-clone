@@ -14,13 +14,11 @@ const MainPage = () => {
     useEffect(() => {
         movieDatas();
     }, []);
-    console.log(movies);
     return (
         <div
             style={{
                 positon: 'relative',
                 width: '100vw',
-                height: '200vh',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
