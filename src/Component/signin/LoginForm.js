@@ -38,11 +38,14 @@ const LoginForm = () => {
         } else {
             setClickChkPwd(false);
         }
+        if (idValueCheck && passwordValueCheck) {
+            window.location.href = 'main';
+        }
     };
 
     return (
         <div className={styles.login__form_container}>
-            <h1>로그인</h1>
+            <h1 className={styles.login__form_container_h1}>로그인</h1>
             <form className={styles.login__form}>
                 <div className={styles.input_container}>
                     <input onChange={idValueChange} className={styles.input} type='email' id='user__id' autoComplete='email' />

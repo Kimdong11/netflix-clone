@@ -1,0 +1,88 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    transition: background-color 0.5s linear;
+}
+
+.container__scroll {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100vw;
+    background-color: black;
+    transition: background-color 0.5s linear;
+}
+
+.netflix__text {
+    width: 6rem;
+    color: #e50914;
+    fill: #e50914 !important;
+    line-height: normal;
+    opacity: 100%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.left__container {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.right__container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin-right: 70px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.left__container ul {
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.left__container ul li {
+    margin-right: 15px;
+}
+
+.right__container ul {
+    font-size: 14px;
+}
+
+.right__container ul li {
+    margin-left: 15px;
+}
+
+.selected__li {
+    color: white;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.selected__li a {
+    color: white;
+}
+
+a {
+    cursor: pointer;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 75%;
+    transition: all 0.2s linear;
+}

@@ -104,6 +104,10 @@
     flex-direction: column;
     align-items: center;
 }
+.fourth__container_columns ul {
+    display: flex;
+    flex-direction: column;
+}
 
 .fourth__container h1 {
     color: white;
