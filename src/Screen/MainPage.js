@@ -1,9 +1,10 @@
 import TopBar from '../Component/main/TopBar';
-import LoginForm from '../Component/signin/LoginForm';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import SlideImage from '../Component/SlideImage';
-import './mainpage.module.css';
+import styles from './mainpage.module.css';
+import Video from '../Component/main/Video';
+import Modal from '../Component/main/Modal';
 
 const MainPage = () => {
     const [movies, setMovies] = useState([]);
@@ -24,12 +25,27 @@ const MainPage = () => {
                 alignItems: 'center',
             }}>
             <TopBar />
-
-            <SlideImage images={movies} />
-            <SlideImage images={movies} />
-            <SlideImage images={movies} />
-            <SlideImage images={movies} />
-            <SlideImage images={movies} />
+            <Video />
+            <div className={styles.div__slide__container}>
+                <h1>지금 뜨는 콘텐츠</h1>
+                <SlideImage images={movies} />
+            </div>
+            <div className={styles.div__slide__container}>
+                <h1>지금 뜨는 콘텐츠</h1>
+                <SlideImage images={movies} />
+            </div>
+            <div className={styles.div__slide__container}>
+                <h1>지금 뜨는 콘텐츠</h1>
+                <SlideImage images={movies} />
+            </div>
+            <div className={styles.div__slide__container}>
+                <h1>지금 뜨는 콘텐츠</h1>
+                <SlideImage images={movies} />
+            </div>
+            <div className={styles.div__slide__container}>
+                <h1>지금 뜨는 콘텐츠</h1>
+                <SlideImage images={movies} />
+            </div>
         </div>
     );
 };

@@ -1,0 +1,150 @@
+.video__container {
+    position: relative;
+    width: 100vw;
+    height: 20%;
+}
+
+.video__container video {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.desc__container {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 270px;
+    height: 400px;
+}
+
+.desc {
+    color: white;
+}
+
+.volume__controller__outer {
+    position: absolute;
+    top: 80%;
+    right: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume__controller__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+
+.age__limint__container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 190px;
+}
+
+.age__limint__container__line {
+    background-color: white;
+    width: 3px;
+    height: 30px;
+}
+
+.age__limint__container__svg {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 110px;
+    height: 30px;
+}
+
+.svg__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 50px;
+    height: 40px;
+}
+
+.svg__icon_path__outer {
+    fill: rgb(205, 109, 52);
+}
+
+.svg__icon_path__inner {
+    font-size: 1.1vw;
+    fill: rgb(255, 255, 254);
+}
+
+.play__detail__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 81.5%;
+    left: 5%;
+}
+
+.play__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 115px;
+    height: 42px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.detail__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 42px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.play__container svg {
+    padding-left: 5px;
+    height: 1.6rem;
+}
+
+.play__container svg path {
+    fill: black;
+}
+
+.play__container span {
+    padding-right: 5px;
+}
+
+.detail__container svg {
+    padding-left: 5px;
+    height: 1.6em;
+}
+
+.detail__container span {
+    padding-right: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.play__container:hover,
+.detail__container:hover {
+    opacity: 0.75;
+}

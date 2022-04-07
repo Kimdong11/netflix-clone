@@ -11,25 +11,49 @@
     overflow: visible;
     grid-template-columns: repeat(6, 1fr);
     position: absolute;
-    z-index: -1;
+}
+
+.modal {
+    width: 236px;
+    height: 140px;
+}
+
+.image__box {
+    cursor: pointer;
+}
+
+.image {
+    width: 236px;
+    height: 140px;
+    background-color: black;
+    overflow: visible;
 }
 
 .button__container {
-    position: absolute;
     width: 100%;
     height: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: -1;
 }
 
-.button__container button {
+.backward__button,
+.forward__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
     height: 140px;
     background-color: black;
     opacity: 10%;
+    border: none;
 }
 
-.button__container button:hover {
-    opacity: 40%;
+.forward__button {
+    right: 0;
+}
+
+.backward__button:hover,
+.forward__button:hover {
+    opacity: 70%;
 }

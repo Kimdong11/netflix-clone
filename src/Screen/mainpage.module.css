@@ -1,3 +1,10 @@
-body {
-    background-color: orange;
+.div__slide__container {
+    width: 100vw;
+}
+
+.div__slide__container h1 {
+    margin-top: 15%;
+    margin-bottom: -13%;
+    font-size: 26px;
+    color: white;
 }

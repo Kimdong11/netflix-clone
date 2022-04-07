@@ -6,6 +6,7 @@
     height: 50px;
     top: 0;
     transition: background-color 0.5s linear;
+    z-index: 99;
 }
 
 .container__scroll {
@@ -16,6 +17,7 @@
     width: 100vw;
     background-color: black;
     transition: background-color 0.5s linear;
+    z-index: 99;
 }
 
 path {

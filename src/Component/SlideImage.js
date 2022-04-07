@@ -1,8 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './slideimage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import Modal from './main/Modal';
 
 const row_variants = {
     hidden: (isBack) => {
@@ -17,8 +18,13 @@ const row_variants = {
 };
 
 const SlideImage = ({ images }) => {
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    let imageRef = useRef();
     const [back, setBack] = useState(false);
     const [index, setIndex] = useState(0);
+    const [isMouseEnter, setIsMouseEnter] = useState(false);
+    const [src, setSrc] = useState({});
 
     const offset = 6;
     const total = images.length - 1;
@@ -31,13 +37,28 @@ const SlideImage = ({ images }) => {
         });
     };
 
+    const makeModal = (e) => {
+        const index = e._targetInst.return.key;
+        let ref = imageRef;
+        console.log(ref);
+        setSrc({ src: e.target.currentSrc, index, width: ref.width, y: ref.y, x: ref.x, height: ref.height });
+        setIsMouseEnter((prev) => {
+            return !prev;
+        });
+    };
+
+    const deleteModal = () => {
+        setIsMouseEnter((prev) => {
+            return !prev;
+        });
+    };
+
     const decrease = () => {
         setBack(true);
         setIndex((prev) => {
             return prev === 0 ? maxIndex : prev - 1;
         });
     };
-
     return (
         <>
             <div className={styles.container}>
@@ -51,25 +72,30 @@ const SlideImage = ({ images }) => {
                         exit='exit'
                         custom={back}
                         transition={{ x: { type: 'tween', duration: 0.8 } }}>
-                        {images.slice(offset * index, offset * index + offset).map((image) => {
+                        {images.slice(offset * index, offset * index + offset).map((image, index) => {
                             return (
-                                <img
-                                    src={image.large_cover_image}
-                                    key={image.background_image}
-                                    style={{ width: '236px', height: '140px', backgroundColor: 'black', overflow: 'visible' }}
-                                />
+                                <div
+                                    key={index}
+                                    ref={(el) => {
+                                        if (!el) return;
+                                        imageRef = el.getBoundingClientRect();
+                                    }}
+                                    onMouseEnter={makeModal}
+                                    onMouseLeave={deleteModal}
+                                    className={styles.image__box}>
+                                    <img className={styles.image} src={image.large_cover_image} />
+                                </div>
                             );
                         })}
+                        {isMouseEnter ? <Modal src={src} open={isMouseEnter} /> : null}
                     </motion.div>
                 </AnimatePresence>
-                <div className={styles.button__container}>
-                    <button onClick={decrease}>
-                        <FontAwesomeIcon icon={faChevronLeft} size='2x' color='white' />
-                    </button>
-                    <button onClick={increase}>
-                        <FontAwesomeIcon icon={faChevronRight} size='2x' color='white' />
-                    </button>
-                </div>
+                <button onClick={decrease} className={styles.backward__button}>
+                    <FontAwesomeIcon icon={faChevronLeft} size='2x' color='white' />
+                </button>
+                <button onClick={increase} className={styles.forward__button}>
+                    <FontAwesomeIcon icon={faChevronRight} size='2x' color='white' />
+                </button>
             </div>
         </>
     );
